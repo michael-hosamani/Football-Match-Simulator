@@ -10,14 +10,12 @@ export class Commentary{
 
     // commentary on the ball being passed
     commentOnPass(playerA: Player, playerB: Player){
-        
          console.log(`${playerA.playerName} has passed the ball to ${playerB.playerName}`)
     }
 
 
     // commentary on a goal being saved
-    commentOnGoalSave(team: Team, player: Player){
-        
+    commentOnGoalSave(team: Team, player: Player){   
         console.log(`Its unbelievable, ${player.playerName} from ${team.teamName} has saved the goal!!!`)
     }
 

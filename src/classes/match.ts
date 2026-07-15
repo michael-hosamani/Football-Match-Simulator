@@ -2,7 +2,6 @@ import { findPlayer } from "../helpers/findPlayer.js";
 import { isGoalSaved } from "../helpers/isGoalSaved.js";
 import { manageGoalSaved } from "../helpers/manageGoalSaved.js";
 import { manageGoalScored } from "../helpers/manageGoalScored.js";
-import { GOAL_PROBABILITY } from "../lib/constants.js";
 import { Commentary } from "./commentary.js";
 import { playerActions } from "./enums.js";
 import type { Player } from "./player.js";

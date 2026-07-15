@@ -1,12 +1,11 @@
-import { playerActions, playerRole } from "./classes/enums.js"
 import { Match } from "./classes/match.js"
-import { Defender, GoalKeeper, Midfielder, Striker, type Player } from "./classes/player.js"
+import { Defender, Midfielder, Striker, type Player } from "./classes/player.js"
 import { Team } from "./classes/team.js"
 import { roles, team1JerseyNumbers, team1PlayerNames, team2JerseyNumbers, team2PlayerNames } from "./constants/teamInfo.js";
 import { createPlayers } from "./helpers/createPlayers.js";
-// import { team1, team1Players, team2, team2Players } from "./constants/teamInfo.js";
 import { findPlayer } from './helpers/findPlayer.js';
 
+// main function is used to simulate a football match
 function main(){
     const team1 = new Team("team 1", []);
     const team1Players: Player[] = createPlayers(team1, team1PlayerNames, team1JerseyNumbers, roles)

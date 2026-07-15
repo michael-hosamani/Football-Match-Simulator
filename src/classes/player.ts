@@ -19,6 +19,7 @@ export class Player{
         console.log("action: ", playerActions[action]);
     }
 
+    // this function is used to increment goal count of a certain player
     incrementGoal(){
         this.scoredGoals++;
     }

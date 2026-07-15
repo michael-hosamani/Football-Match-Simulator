@@ -1,8 +1,4 @@
 import { playerRole } from "../classes/enums.js"
-import { Player } from "../classes/player.js"
-import { Team } from "../classes/team.js"
-import {  createPlayers } from "../helpers/createPlayers.js";
-
 
 export const roles = [playerRole.Striker, playerRole.Striker, playerRole.Midfielder, playerRole.Defender, playerRole.GoalKeeper]
 
