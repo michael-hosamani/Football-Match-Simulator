@@ -2,17 +2,9 @@ import type { Player } from "./player.js";
 import type { Team } from "./team.js";
 
 export class Commentary{
-    public team1: Team;
-    public team2: Team;
-
-    constructor(team1: Team, team2: Team){
-        this.team1 = team1;
-        this.team2 = team2;
-    }
 
     // commentary on a goal scored
     commentOnGoal(team: Team, player: Player){
-        
         console.log(`${player.playerName} from ${team.teamName} has scored an incredible goal!!!`)
     }
 

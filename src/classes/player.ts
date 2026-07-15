@@ -5,12 +5,10 @@ export class Player{
     public jerseyNumber: number;
     public role: playerRole;
     // public actions: playerActions;
-    public actions: playerActions | null;
     public scoredGoals: number;
 
-    constructor(playerName: string, actions: playerActions | null, jerseyNumber: number, role: playerRole, scoredGoals = 0){
+    constructor(playerName: string, jerseyNumber: number, role: playerRole, scoredGoals = 0){
         this.playerName = playerName;
-        this.actions = actions;
         this.jerseyNumber = jerseyNumber;
         this.role = role;
         this.scoredGoals = scoredGoals;
@@ -18,8 +16,7 @@ export class Player{
     
     // this function performs a common action
     performAction(action: playerActions){
-        this.actions = action;
-        console.log("action: ", playerActions[this.actions]);
+        console.log("action: ", playerActions[action]);
     }
 
     incrementGoal(){
@@ -31,55 +28,54 @@ export class Player{
 export class Striker extends Player{
     public role: playerRole = playerRole.Striker;
 
-    constructor(playerName: string, actions: playerActions | null, jerseyNumber: number, role: playerRole){
-        super(playerName, actions, jerseyNumber, role);
-        // this.role = playerRole.Striker;
+    constructor(playerName: string, jerseyNumber: number, role: playerRole){
+        super(playerName, jerseyNumber, role);
     }
 
     // striker shoots the ball
     shoot(){
-        console.log("shoot");
+        console.log(`${this.playerName} shot the ball`);
     }
 }
 
 export class Midfielder extends Player{
     public role: playerRole;
 
-    constructor(playerName: string, actions: playerActions | null, jerseyNumber: number, role: playerRole){
-        super(playerName, actions, jerseyNumber, role);
+    constructor(playerName: string, jerseyNumber: number, role: playerRole){
+        super(playerName, jerseyNumber, role);
         this.role = playerRole.Midfielder;
     }
 
     // midfielder performs a long pass
     longPass(){
-        console.log("long Pass");
+        console.log(`${this.playerName} made a long pass`);
     }
 }
 
 export class Defender extends Player{
     public role: playerRole;
 
-    constructor(playerName: string, actions: playerActions | null, jerseyNumber: number, role: playerRole){
-        super(playerName, actions, jerseyNumber, role);
+    constructor(playerName: string, jerseyNumber: number, role: playerRole){
+        super(playerName, jerseyNumber, role);
         this.role = playerRole.Defender;
     }
 
     // defender tackles
     tackle(){
-        console.log("tackle");
+        console.log(`${this.playerName} tackled`);
     }
 }
 
 export class GoalKeeper extends Player{
     public role: playerRole;
 
-    constructor(playerName: string, actions: playerActions | null, jerseyNumber: number, role: playerRole){
-        super(playerName, actions, jerseyNumber, role);
+    constructor(playerName: string, jerseyNumber: number, role: playerRole){
+        super(playerName, jerseyNumber, role);
         this.role = playerRole.GoalKeeper;
     }
 
     // goalkeeper saves the goal
     saveGoal(){
-        console.log("save goal");
+        console.log(`${this.playerName} saved a goal`);
     }
 }
