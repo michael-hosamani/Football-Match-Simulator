@@ -1,4 +1,4 @@
-import { playerActions, playerRole } from "./enums.js";
+import { playerActions, playerRole } from "../lib/enums.js";
 
 export class Player{
     public playerName: string;

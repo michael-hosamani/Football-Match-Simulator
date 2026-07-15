@@ -3,7 +3,7 @@ import { isGoalSaved } from "../helpers/isGoalSaved.js";
 import { manageGoalSaved } from "../helpers/manageGoalSaved.js";
 import { manageGoalScored } from "../helpers/manageGoalScored.js";
 import { Commentary } from "./commentary.js";
-import { playerActions } from "./enums.js";
+import { playerActions } from "../lib/enums.js";
 import type { Player } from "./player.js";
 import type { Team } from "./team.js";
 

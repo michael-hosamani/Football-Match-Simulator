@@ -1,5 +1,5 @@
 import type { Commentary } from "../classes/commentary.js";
-import { playerActions } from "../classes/enums.js";
+import { playerActions } from "../lib/enums.js";
 import { GoalKeeper, type Player } from "../classes/player.js";
 import type { Team } from "../classes/team.js";
 

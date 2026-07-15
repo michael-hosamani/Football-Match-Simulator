@@ -1,4 +1,4 @@
-import type { playerRole } from "../classes/enums.js";
+import type { playerRole } from "../lib/enums.js";
 import { Player } from "../classes/player.js";
 import type { Team } from "../classes/team.js";
 import { TEAM_SIZE } from "../lib/constants.js";
